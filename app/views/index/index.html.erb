@@ -1,0 +1,14 @@
+<h4>Index</h4>
+
+<div class = 'index_page'>
+<h3>Current Users</h3>
+
+
+<% @users.each do |user| %>
+
+
+<p><%= link_to user.name, user %></p>
+</div>
+
+<% end %>
+</table>

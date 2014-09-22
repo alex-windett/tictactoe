@@ -1,0 +1,12 @@
+<!-- <h1>Listing Moves</h1> -->
+
+<p>
+  <!-- <b>Previous Games</b> -->
+  <% @game.each do |game|%>
+  <%#= link_to game.id, game %>
+  <% end %>
+</p>
+
+<br>
+
+<%= link_to 'New Game', new_game_path %>

@@ -1,0 +1,21 @@
+<h2>Current Members</h2>
+ 
+<table>
+  <tr class = 'users_index'>
+    <th><em>Name</em></th>
+    <th><em>Email</em></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr class = 'users_index'>
+    <td><%= link_to user.name, user %></td>
+    <td><%= user.email %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%#= link_to 'New User', new_user_path %>
